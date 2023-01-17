@@ -10,11 +10,7 @@ module.exports = {
       },
       colors: {
         green: "#4D9078",
-      },
-      screens: {
-        tablet: "640px",
-        laptop: "768px",
-        desktop: "1024px",
+        orange: "#F2B705",
       },
     },
   },
