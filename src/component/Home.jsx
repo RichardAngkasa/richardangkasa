@@ -8,6 +8,7 @@ import { FaCode } from "react-icons/fa";
 import { GrLinkedin } from "react-icons/gr";
 import { BiCrown } from "react-icons/bi";
 import Layout from "./Layout";
+// import TodoPaper from "../Todo/TodoPaper";
 
 function Home() {
   const todoLink = () => {
@@ -16,7 +17,7 @@ function Home() {
   return (
     <>
       <Layout>
-        <div className="mx-auto duration-500 h-full">
+        <div className="mx-auto duration-500 h-full scroll-smooth">
           <div className="w-full py-16 z-20 backdrop-blur-sm bg-center bg-cover bg-fixed bg-[url('https://img.freepik.com/free-vector/3d-abstract-wave-pattern-background-vector_53876-166839.jpg?t=st=1673841119~exp=1673841719~hmac=97fe3f101a32c4efc439339ee3b44627387a118866615bd661f90cfad7bd6f88')]">
             <div className="mx-auto px-4 sm:max-w-[60rem] max-w-full overflow-x-hidden">
               {/* About Me*/}
@@ -38,7 +39,7 @@ function Home() {
 
                   <div className="max-w-48 sm:max-w-72">
                     <img
-                      src="https://media.discordapp.net/attachments/1061563398384525387/1061566313509683210/richard_angkasa_cyber_profile_upscale_3bbda030-eb1f-4c73-9847-6df20d3cc24f.png?width=606&height=606"
+                      src="https://i.ibb.co/MB89t13/73556227564-resize.png"
                       alt="profileimage"
                       className=" h-40 sm:h-96 object-cover z-20 rounded-2xl "
                     />
@@ -52,10 +53,10 @@ function Home() {
                 <SiTailwindcss className="h-10 w-10 sm:h-14 sm:w-14 fill-white" />
                 <FaFigma className="h-10 w-10 sm:h-14 sm:w-14 fill-white" />
               </div>
-              {/* Services*/}
+              {/* Speciality*/}
               <div className="py-24">
                 <h1 className="font-jakarta font-light text-lg sm:text-3xl sm:flex sm:justify-start ">
-                  Services
+                  Speciality
                 </h1>
                 <div className="flex items-end sm:mt-1">
                   <div className="h-px w-16 sm:w-20 mr-1 mt-1  bg-orange"></div>
@@ -63,9 +64,10 @@ function Home() {
                   <div className="h-px w-2 sm:w-7 bg-orange"></div>
                 </div>
 
-                <div className="flex flex-col sm:flex sm:flex-row sm:justify-evenly gap-5 mt-8">
-                  <div className="tems-center">
-                    <div className="flex items-center gap-3">
+                <div className="flex flex-col sm:flex sm:flex-row gap-5 mt-8">
+                  {/* ui/ux */}
+                  <div className="sm:w-1/2">
+                    <div className="flex items-center gap-3 w-full">
                       <MdOutlineDesignServices className="w-8 h-8 fill-orange" />
                       <h1 className="font-jakarta font-medium text-xl">
                         UI/UX Design
@@ -76,7 +78,8 @@ function Home() {
                       reality. For any platform you consider.
                     </h1>
                   </div>
-                  <div className="tems-center">
+                  {/* frontend */}
+                  <div className="sm:w-1/2">
                     <div className="flex items-center gap-3">
                       <FaCode className="w-8 h-8 fill-orange" />
                       <h1 className="font-jakarta font-medium text-xl">
@@ -95,41 +98,84 @@ function Home() {
               <div className="py-24 w-full">
                 <div className="mx-auto max-w-full">
                   <h1 className="font-jakarta font-light text-lg sm:text-3xl sm:flex sm:justify-start ">
-                    Projects
+                    Portfolio
                   </h1>
+
                   <div className="flex items-end sm:mt-1">
                     <div className="h-px w-16 sm:w-20 mr-1 mt-1  bg-orange"></div>
                     <div className="h-px w-5 sm:w-9 mr-1 bg-orange"></div>
                     <div className="h-px w-2 sm:w-7 bg-orange"></div>
                   </div>
-                  <div className="flex mt-8 overflow-x-auto ">
-                    <div
-                      onClick={todoLink}
-                      className="min-w-[20rem] hover:scale-105 pt-5 pb-5 duration-200 transition-all sm:max-w-[18.125rem] h-fit cursor-pointer "
-                    >
+                  <div className="flex flex-col sm:flex sm:flex-row sm:justify-evenly items-center gap-8 sm:gap-0 mt-8">
+                    <img
+                      src="https://i.ibb.co/LJmxm5K/To-do-list.png"
+                      className=" object-cover w-full"
+                      alt="todo-list"
+                    />
+
+                    <img
+                      src="https://i.ibb.co/4jrT4jH/Frame-1-1.png"
+                      className=" object-cover w-full"
+                      alt="calculator"
+                    />
+                  </div>
+                </div>
+              </div>
+              {/* Personal Blog*/}
+              <div className="w-full py-24">
+                <div className="mx-auto max-w-full">
+                  <h1 className="font-jakarta font-light text-lg sm:text-3xl sm:flex sm:justify-start ">
+                    Blogs
+                  </h1>
+                  <div className="flex items-end sm:mt-1">
+                    <div className="h-px w-10 sm:w-12 mr-1 mt-1  bg-orange"></div>
+                    <div className="h-px w-5 sm:w-10 mr-1 bg-orange"></div>
+                    <div className="h-px w-4 sm:w-6 bg-orange"></div>
+                  </div>
+
+                  <div className="flex flex-col sm:flex sm:flex-row sm:justify-evenly items-center gap-8 sm:gap-0 mt-8">
+                    <div className="max-w-80 sm:max-w-sm h-full rounded-2xl mx-4 ">
                       <img
-                        src="https://drive.google.com/uc?export=view&id=12LXOn46S_vVNYB0ppPUYxdUwLywwb_Be"
-                        className="h-[12.5rem] object-cover w-full"
-                        alt="todo"
+                        src="https://drive.google.com/uc?export=view&id=187qz_RB1VljYHoB498YK7KmnxKXM1SdV"
+                        className="h-80 object-cover rounded-2xl"
                       />
+                      <h1 className="font-jakarta font-bold my-2 text-xl mx-3 ">
+                        Button Design — UI component series
+                      </h1>
+                      <h1 className="font-jakarta font-normal mx-3 text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Fusce id magna nec ante scelerisque laoreet. Fusce
+                        finibus ...
+                      </h1>
+                      <div className="flex justify-center h-14  rounded-bl-2xl rounded-br-2xl mt-2">
+                        <button className="px-3 flex items-center">
+                          Continue Reading
+                        </button>
+                      </div>
                     </div>
-                    <div className=" min-w-[20rem] hover:scale-105 pt-5 pb-5 duration-200 transition-all   sm:max-w-[18.125rem]  h-fit cursor-pointer ">
+                    <div className="max-w-80 sm:max-w-sm h-full rounded-2xl mx-4">
                       <img
-                        src="https://drive.google.com/uc?export=view&id=1VfBsvuZ0U4M--PG69jUotlUzQaeO0yE4"
-                        className="h-[12.5rem] object-cover w-full"
-                        alt="e-commerce"
+                        src="https://drive.google.com/uc?export=view&id=1U5hD-QZttKxoDufrfn_XloMkiVn-sj1_"
+                        className="h-80 w-full object-cover rounded-2xl"
                       />
-                    </div>
-                    <div className="min-w-[20rem] hover:scale-105 pt-5 pb-5 duration-200 transition-all   sm:max-w-[18.125rem]  h-fit cursor-pointer ">
-                      <img
-                        src="https://drive.google.com/uc?export=view&id=18vmUQusZFn95lWH9ecXy0z1dXlPFkDph"
-                        className="h-[12.5rem] object-cover w-full"
-                        alt="design"
-                      />
+                      <h1 className="font-jakarta font-bold my-2 text-xl mx-3 ">
+                        Button Design — UI component series
+                      </h1>
+                      <h1 className="font-jakarta font-normal mx-3 text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Fusce id magna nec ante scelerisque laoreet. Fusce
+                        finibus ...
+                      </h1>
+                      <div className="flex justify-center h-14  rounded-bl-2xl rounded-br-2xl mt-2">
+                        <button className="px-3 flex items-center">
+                          Continue Reading
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+              {/* footer */}
             </div>
           </div>
         </div>
