@@ -5,20 +5,26 @@ import { SiTailwindcss } from "react-icons/si";
 import { FaFigma } from "react-icons/fa";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { FaCode } from "react-icons/fa";
-import { GrLinkedin } from "react-icons/gr";
-import { BiCrown } from "react-icons/bi";
+// import desktopProfile from "/asset/desktop_richard.png";
+// import mobileProfile from "/asset/mobile_richard.png";
+// import desktopRigel from "/asset/desktop_rigel.jpg";
+// import mobileRigel from "/asset/mobile_rigel.jpg";
+// import desktopBackground from "/asset/desktop_background.jpg";
+// import mobileBackground from "/asset/mobile-background.jpg";
+// import { GrLinkedin } from "react-icons/gr";
+// import { BsGithub } from "react-icons/bs";
 import Layout from "./Layout";
 // import TodoPaper from "../Todo/TodoPaper";
 
 function Home() {
-  const todoLink = () => {
-    window.location = "https://todo.richardangkasa.my.id/";
-  };
+  // const todoLink = () => {
+  //   window.location = "https://todo.richardangkasa.my.id/";
+  // };
   return (
     <>
       <Layout>
         <div className="mx-auto duration-500 h-full scroll-smooth">
-          <div className="w-full py-16 z-20 backdrop-blur-sm bg-center bg-cover bg-fixed bg-[url('https://img.freepik.com/free-vector/3d-abstract-wave-pattern-background-vector_53876-166839.jpg?t=st=1673841119~exp=1673841719~hmac=97fe3f101a32c4efc439339ee3b44627387a118866615bd661f90cfad7bd6f88')]">
+          <div className="w-full py-16 z-20 backdrop-blur-sm bg-center bground bg-cover bg-fixed">
             <div className="mx-auto px-4 sm:max-w-[60rem] max-w-full overflow-x-hidden">
               {/* About Me*/}
               <div className="py-24 flex">
@@ -37,9 +43,16 @@ function Home() {
                     </div>
                   </div>
 
-                  <div className="max-w-48 sm:max-w-72">
+                  <div className="max-w-72 hidden sm:flex">
                     <img
-                      src="https://i.ibb.co/MB89t13/73556227564-resize.png"
+                      src="/asset/desktop_richard.png"
+                      alt="profileimage"
+                      className=" h-40 sm:h-96 object-cover z-20 rounded-2xl "
+                    />
+                  </div>
+                  <div className="max-w-48 sm:hidden">
+                    <img
+                      src="/asset/mobile_richard.png"
                       alt="profileimage"
                       className=" h-40 sm:h-96 object-cover z-20 rounded-2xl "
                     />
@@ -106,23 +119,35 @@ function Home() {
                     <div className="h-px w-5 sm:w-9 mr-1 bg-orange"></div>
                     <div className="h-px w-2 sm:w-7 bg-orange"></div>
                   </div>
-                  <div className="flex flex-col sm:flex sm:flex-row sm:justify-evenly items-center gap-8 sm:gap-0 mt-8">
+                  <div className="sm:justify-evenly items-center gap-8  mt-8 hidden sm:flex">
                     <img
-                      src="https://i.ibb.co/LJmxm5K/To-do-list.png"
-                      className=" object-cover w-full"
-                      alt="todo-list"
+                      src="/asset/desktop_rigel.jpg"
+                      className=" object-cover w-full rounded-2xl"
+                      alt="rigel"
+                      onClick={() => {
+                        window
+                          .open("https://rigelarzel.vercel.app/", "_blank")
+                          .focus();
+                      }}
                     />
-
+                  </div>
+                  {/* <div className="flex flex-col sm:flex sm:flex-row sm:justify-evenly items-center gap-8 sm:gap-0 mt-8"> */}
+                  <div className="flex flex-col items-center gap-8  mt-8 sm:hidden">
                     <img
-                      src="https://i.ibb.co/4jrT4jH/Frame-1-1.png"
-                      className=" object-cover w-full"
-                      alt="calculator"
+                      src="/asset/mobile_rigel.jpg"
+                      className=" object-cover w-full rounded-2xl"
+                      alt="rigel"
+                      onClick={() => {
+                        window
+                          .open("https://rigelarzel.vercel.app/", "_blank")
+                          .focus();
+                      }}
                     />
                   </div>
                 </div>
               </div>
               {/* Personal Blog*/}
-              <div className="w-full py-24">
+              {/* <div className="w-full py-24">
                 <div className="mx-auto max-w-full">
                   <h1 className="font-jakarta font-light text-lg sm:text-3xl sm:flex sm:justify-start ">
                     Blogs
@@ -174,8 +199,12 @@ function Home() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
               {/* footer */}
+              {/* <div className="flex gap-2 sm:gap-5">
+                <BsGithub className="h-5 w-[1.25rem] sm:h-[1.875rem] sm:w-[1.875rem] fill-white" />
+                <GrLinkedin className="h-[1.25rem] w-[1.25rem] sm:h-[1.875rem] sm:w-[1.875rem] fill-white" />
+              </div> */}
             </div>
           </div>
         </div>
@@ -185,8 +214,3 @@ function Home() {
 }
 
 export default Home;
-
-// <div className="flex gap-2 sm:gap-5">
-// <BsGithub className="h-5 w-[1.25rem] sm:h-[1.875rem] sm:w-[1.875rem] fill-white" />
-// <GrLinkedin className="h-[1.25rem] w-[1.25rem] sm:h-[1.875rem] sm:w-[1.875rem] fill-white" />
-// </div>

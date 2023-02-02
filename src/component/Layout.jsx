@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { RiMoonClearLine } from "react-icons/ri";
-import { RxHamburgerMenu } from "react-icons/rx";
+// import { RiMoonClearLine } from "react-icons/ri";
+// import { RxHamburgerMenu } from "react-icons/rx";
 import { HiOutlineArrowUp } from "react-icons/hi";
-import { AiOutlineClose } from "react-icons/ai";
-import { BsGithub } from "react-icons/bs";
-import { GrLinkedin } from "react-icons/gr";
+// import { AiOutlineClose } from "react-icons/ai";
+// import { BsGithub } from "react-icons/bs";
+// import { GrLinkedin } from "react-icons/gr";
 import { Link } from "react-router-dom";
 
 function Layout({ children }) {
@@ -14,14 +14,14 @@ function Layout({ children }) {
   // const scrollWork = () => {
   //     window.scrollTo(0, 500);
   //   };
-  const [side, setSide] = useState(false);
-  const hey = () => {
-    if (side === true) {
-      setSide(false);
-    } else {
-      setSide(true);
-    }
-  };
+  // const [side, setSide] = useState(false);
+  // const hey = () => {
+  //   if (side === true) {
+  //     setSide(false);
+  //   } else {
+  //     setSide(true);
+  //   }
+  // };
   const [backToTop, setBackToTop] = useState(false);
   window.onscroll = () => {
     if (
@@ -40,7 +40,7 @@ function Layout({ children }) {
   };
   return (
     <>
-      {side ? (
+      {/* {side ? (
         <div className="bg-gradient-to-b from-black fixed z-40  ">
           <div
             onClick={hey}
@@ -56,13 +56,13 @@ function Layout({ children }) {
             </Link>
           </div>
         </div>
-      ) : null}
+      ) : null} */}
       <div className="w-full">
         <div className="w-full backdrop-blur-sm top-0 fixed items-center flex justify-between px-3.5 py-2 z-10">
           <div className="flex items-center">
-            <button onClick={hey} value="hai">
+            {/* <button onClick={hey} value="hai">
               <RxHamburgerMenu className="h-6 w-6 mr-5 sm:hidden fill-white" />
-            </button>
+            </button> */}
             <Link
               to="/"
               className="font-outfit font-normal text-5xl text-white"
@@ -72,18 +72,18 @@ function Layout({ children }) {
             </Link>
           </div>
 
-          <div className="hidden sm:flex font-outfit font-extralight text-2xl gap-x-14 text-white">
+          {/* <div className="hidden sm:flex font-outfit font-extralight text-2xl gap-x-14 text-white">
             <button>Speciality</button>
             <button>Portfolio</button>
             <Link to="/blog">
               <button>Blogs</button>
             </Link>
-          </div>
+          </div> */}
 
           <div className="flex gap-6">
-            <button>
+            {/* <button>
               <RiMoonClearLine className="w-6 h-6" />
-            </button>
+            </button> */}
             <button className="h-14 w-full border-2 px-5 rounded-2xl border-orange">
               <h1 className="font-outfit font-light text-2xl">Contact</h1>
             </button>
