@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-import "../public/index.css";
-// import Blog from "./component/Blog";
+import "./App.css";
+import Blog from "./component/Blog";
 import Home from "./component/Home";
 // import TodoPaper from "./Todo/TodoPaper";
 
